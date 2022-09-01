@@ -1,0 +1,33 @@
+<h1>Formindex</h1>
+<p>Find me in app/views/form/index.html.erb</p>
+
+<%= form_with url: "/calc/index", method: :get do |form| %>
+<div style="display:flex;flex-direction:column">
+	<div>
+		<%= form.label :subjec1, "Subject1:" %>
+		<%= form.text_field :subject1 %>
+		<%= form.label :mark1,"Score1:" %>
+		<%= form.text_field :score1 %>
+	</div>
+	<div>
+		<%= form.label :subject2, "Subject2:" %>
+		<%= form.text_field :subject2 %>
+		<%= form.label :mark2,"Score2:" %>
+		<%= form.text_field :score2 %>
+	</div>
+
+	<div>
+		<%= form.label :subject3, "Subject3:" %>
+		<%= form.text_field :subject3 %>
+		<%= form.label :mark3,"Score3:" %>
+		<%= form.text_field :score3 %>
+	</div>
+
+	<button style="width:200px;" Type="submit">
+		Submit
+	</button>
+	
+	</div>
+
+<% end %>
+

@@ -1,0 +1,364 @@
+Started GET "/" for ::1 at 2022-09-01 23:08:37 +0700
+  [1m[35m (14.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 32.3ms | Allocations: 654)
+Completed 200 OK in 150ms (Views: 68.4ms | ActiveRecord: 0.0ms | Allocations: 5176)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:08:42 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.7ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 688.3ms | Allocations: 73280)
+Completed 500 Internal Server Error in 699ms (ActiveRecord: 0.0ms | Allocations: 74299)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Users/user/ProjeXt/ruby_form/form/tmp/cache/assets/sprockets/v4.0.0/F1/F1w5djKMuIjAhQgefofdh6qhYmjYjDe8hr06cKFWS0U.cache.21260.16176.294668, C:/Users/user/ProjeXt/ruby_form/form/tmp/cache/assets/sprockets/v4.0.0/F1/F1w5djKMuIjAhQgefofdh6qhYmjYjDe8hr06cKFWS0U.cache)):
+  
+sprockets (4.1.1) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.1.1) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.1.1) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.1.1) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.1.1) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.1.1) lib/sprockets/loader.rb:341:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:32:in `block in call'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each_key'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each'
+sprockets (4.1.1) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.1.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/main/test" for ::1 at 2022-09-01 23:08:59 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.8ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 20126)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 0.0ms | Allocations: 20968)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:09:23 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 132.8ms | Allocations: 15396)
+  Rendered layout layouts/application.html.erb (Duration: 139.1ms | Allocations: 17037)
+Completed 200 OK in 149ms (Views: 145.2ms | ActiveRecord: 0.0ms | Allocations: 17869)
+
+
+Started GET "/score/index?subject1=Data&mark1=&subject2=Algo&mark2=&subject3=Discrete&mark3=" for ::1 at 2022-09-01 23:09:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/score/index"):
+  
+Started GET "/score/index?subject1=Data&mark1=&subject2=Algo&mark2=&subject3=Discrete&mark3=" for ::1 at 2022-09-01 23:12:19 +0700
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/score/index"):
+  
+Started GET "/score/index?subject1=Data&mark1=&subject2=Algo&mark2=&subject3=Discrete&mark3=" for ::1 at 2022-09-01 23:12:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/score/index"):
+  
+Started GET "/score/index" for ::1 at 2022-09-01 23:12:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/score/index"):
+  
+Started GET "/main/test" for ::1 at 2022-09-01 23:12:58 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.0ms | Allocations: 6207)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 28635)
+Completed 200 OK in 92ms (Views: 82.1ms | ActiveRecord: 0.0ms | Allocations: 30763)
+
+
+Started GET "/calc/index?subject1=&mark1=&subject2=&mark2=&subject3=&mark3=" for ::1 at 2022-09-01 23:13:00 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"", "mark1"=>"", "subject2"=>"", "mark2"=>"", "subject3"=>"", "mark3"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1604)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2401)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:13:50 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.4ms | Allocations: 6003)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 7601)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 8450)
+
+
+Started GET "/calc/index?subject1=&mark1=&subject2=&mark2=&subject3=&mark3=" for ::1 at 2022-09-01 23:13:51 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"", "mark1"=>"", "subject2"=>"", "mark2"=>"", "subject3"=>"", "mark3"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 1642)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 2305)
+
+
+Started GET "/calc/index?subject1=Data&mark1=&subject2=Algo&mark2=&subject3=Discrete&mark3=" for ::1 at 2022-09-01 23:14:03 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "mark1"=>"", "subject2"=>"Algo", "mark2"=>"", "subject3"=>"Discrete", "mark3"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1214)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 1539)
+
+
+Started GET "/calc/index?subject1=Data&mark1=12&subject2=Algo&mark2=23&subject3=Discrete&mark3=556" for ::1 at 2022-09-01 23:14:12 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "mark1"=>"12", "subject2"=>"Algo", "mark2"=>"23", "subject3"=>"Discrete", "mark3"=>"556"}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1234)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1539)
+
+
+Started GET "/calc/index?subject1=Data&mark1=12&subject2=Algo&mark2=23&subject3=Discrete&mark3=556" for ::1 at 2022-09-01 23:15:29 +0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "mark1"=>"12", "subject2"=>"Algo", "mark2"=>"23", "subject3"=>"Discrete", "mark3"=>"556"}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 398)
+  Rendered layout layouts/application.html.erb (Duration: 84.8ms | Allocations: 22953)
+Completed 200 OK in 117ms (Views: 96.3ms | ActiveRecord: 0.0ms | Allocations: 26271)
+
+
+Started GET "/calc/index?subject1=Data&mark1=12&subject2=Algo&mark2=23&subject3=Discrete&mark3=556" for ::1 at 2022-09-01 23:15:32 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "mark1"=>"12", "subject2"=>"Algo", "mark2"=>"23", "subject3"=>"Discrete", "mark3"=>"556"}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1388)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1763)
+
+
+Started GET "/" for ::1 at 2022-09-01 23:15:36 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 320)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 1111)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:15:38 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.7ms | Allocations: 6418)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8076)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 9035)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:16:11 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.5ms | Allocations: 6002)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 7594)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 8455)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:16:16 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.8ms | Allocations: 6001)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 7607)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 8434)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:16:33 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.6ms | Allocations: 6000)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 7603)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 8429)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:17:08 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.2ms | Allocations: 6000)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 7600)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 8426)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:17:48 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.1ms | Allocations: 6001)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 7595)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 8421)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:17:59 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.0ms | Allocations: 6001)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7598)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 8424)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:18:00 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.5ms | Allocations: 5549)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6770)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7067)
+
+
+Started GET "/calc/index?subject1=&Score1=&subject2=&mark2=&subject3=&mark3=" for ::1 at 2022-09-01 23:18:01 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"", "Score1"=>"", "subject2"=>"", "mark2"=>"", "subject3"=>"", "mark3"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1639)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 2283)
+
+
+Started GET "/calc/index?subject1=&Score1=&subject2=&mark2=1&subject3=&mark3=" for ::1 at 2022-09-01 23:18:05 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"", "Score1"=>"", "subject2"=>"", "mark2"=>"1", "subject3"=>"", "mark3"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1237)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 1564)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:18:24 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.3ms | Allocations: 6002)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 7599)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 8422)
+
+
+Started GET "/calc/index?subject1=&Score1=&subject2=&Score2=&subject3=&Score3=" for ::1 at 2022-09-01 23:18:25 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"", "Score1"=>"", "subject2"=>"", "Score2"=>"", "subject3"=>"", "Score3"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 1633)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 2299)
+
+
+Started GET "/calc/index?subject1=Data&Score1=213&subject2=Algo&Score2=234&subject3=&Score3=23535" for ::1 at 2022-09-01 23:18:33 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "Score1"=>"213", "subject2"=>"Algo", "Score2"=>"234", "subject3"=>"", "Score3"=>"23535"}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1241)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 1572)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:19:22 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5992)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 7611)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 8435)
+
+
+Started GET "/main/test" for ::1 at 2022-09-01 23:19:47 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.0ms | Allocations: 5567)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 7013)
+Completed 200 OK in 11ms (Views: 9.1ms | Allocations: 7637)
+
+
+Started GET "/calc/index?subject1=Data&score1=2&subject2=Algo&score2=3&subject3=&score3=4" for ::1 at 2022-09-01 23:19:56 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "score1"=>"2", "subject2"=>"Algo", "score2"=>"3", "subject3"=>"", "score3"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1640)
+Completed 200 OK in 18ms (Views: 13.5ms | Allocations: 2418)
+
+
+Started GET "/calc/index?subject1=Data&score1=2&subject2=Algo&score2=3&subject3=Discrete&score3=4" for ::1 at 2022-09-01 23:19:59 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "score1"=>"2", "subject2"=>"Algo", "score2"=>"3", "subject3"=>"Discrete", "score3"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1225)
+Completed 200 OK in 9ms (Views: 7.2ms | Allocations: 1545)
+
+
+Started GET "/calc/index?subject1=Data&score1=2&subject2=Algo&score2=3&subject3=Discrete&score3=1" for ::1 at 2022-09-01 23:20:03 +0700
+Processing by CalcController#index as HTML
+  Parameters: {"subject1"=>"Data", "score1"=>"2", "subject2"=>"Algo", "score2"=>"3", "subject3"=>"Discrete", "score3"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering calc/index.html.erb within layouts/application
+  Rendered calc/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1222)
+Completed 200 OK in 9ms (Views: 6.6ms | Allocations: 1524)
+
+
